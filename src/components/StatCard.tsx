@@ -1,5 +1,5 @@
 
-
+import "../styles/stat-card.css"
 
 
 interface StatCardProps{
@@ -18,11 +18,17 @@ function StatCard({
     return(
 
         <div className= "stat-card">
-            {icon}
+            <div className= "stat-card__icon">{icon}</div>
 
-            <h3>{title}</h3>
+            <div>
+                <p className="stat-card__tilte">{title}</p>
 
-            <span> {value}</span>
+                <p className= "stat-card__value">{value}</p>
+
+
+
+
+            </div>
 
 
 
