@@ -3,7 +3,7 @@ interface MeetingCardProps{
     date: string;
     participantCount: number;
     actionItemCount: number;
-    status: "upcoming" | "completed"| "processing";
+    status: "upcoming" | "processing"| "completed"|"cancelled";
 
 }
 

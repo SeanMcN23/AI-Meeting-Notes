@@ -4,7 +4,20 @@ export interface MeetingSumary{
     date: string,
     participantCount: number,
     actionItemCount: number,
-    status: "upcoming" | "processing"| "completed";
+    status: "upcoming" | "processing"| "completed"|"cancelled";
+
+
+}
+
+export interface Meeting{
+    id: number;
+    title: string;
+    date: string
+    time: string;
+    participants: string[];
+    description: string;
+    status: "upcoming" | "processing"| "completed"|"cancelled";
+
 
 
 }
